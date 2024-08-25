@@ -88,7 +88,13 @@
           "type": "string",
           "default": "{workspace} - {fileName}",
           "minLength": 1,
-          "description": "Defines the template to show snippet window title, you can use {workspace} and {fileName} variables"
+          "description": "Defines the template to show snippet window title, you can use {workspace}, {fileName}, and {filePaht} variables"
+        },
+        "cy-easy-codesnap.windowTitleIgnore": {
+          "scope": "resource",
+          "type": "string",
+          "default": "",
+          "description": "The pattern that don't want to show in ignore"
         },
         "cy-easy-codesnap.showLineNumbers": {
           "scope": "resource",

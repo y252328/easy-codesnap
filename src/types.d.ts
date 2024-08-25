@@ -3,6 +3,7 @@ export interface ExtensionConfig {
     backgroundColor: string;
     containerPadding: string;
     windowTitleTemplate: string;
+    windowTitleIgnore: string;
 
     lockOnOpen: boolean;
     linkOnOpen: boolean;
@@ -32,6 +33,7 @@ export interface ConfigSentToWebview extends ExtensionConfig {
     editorID: string;
     templates: {
         fileName: string;
+        filePath: string;
         workspace: string;
     };
 }

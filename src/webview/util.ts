@@ -48,11 +48,14 @@ export const vscode = acquireVsCodeApi();
 
 export function getDefaultWindowTitle() {
     const {
-        templates: { fileName, workspace },
+        templates: { fileName, filePath, workspace },
         windowTitleTemplate,
+        windowTitleIgnore,
     } = SessionConfig.get();
 
     return windowTitleTemplate
         .replace(/\{fileName\}/g, fileName)
-        .replace(/\{workspace\}/g, workspace);
+        .replace(/\{workspace\}/g, workspace)
+        .replace(/\{filePath\}/g, filePath)
+        .replaceAll(windowTitleIgnore, ""); 
 }

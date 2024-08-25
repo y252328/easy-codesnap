@@ -19,8 +19,11 @@ export function getConfig() {
     const startLine = selection ? selection.start.line : 0;
 
     let fileName = "";
+    let filePath = "";
     if (editor) {
-        const activeFileName = editor.document.uri.path.split("/").pop();
+        const activeFilePaht = editor.document.uri.path;
+        const activeFileName = activeFilePaht.split("/").pop();
+        filePath = activeFilePaht as string;
         fileName = activeFileName as string;
     }
 
@@ -30,6 +33,7 @@ export function getConfig() {
         startLine,
         templates: {
             fileName,
+            filePath,
             workspace: vscode.workspace.name ?? "",
         },
     };
