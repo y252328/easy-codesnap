@@ -7,7 +7,7 @@ import { PanelController } from "./PanelController";
 export class SnapCommand extends Command {
     context: vscode.ExtensionContext;
 
-    name = "easy-codesnap.snap";
+    name = "cy-easy-codesnap.snap";
 
     constructor(context: vscode.ExtensionContext) {
         super();
@@ -20,7 +20,7 @@ export class SnapCommand extends Command {
         const panelController = new PanelController(panel);
         panelController.init();
 
-        const { fullLinesSelection } = getSettings("easy-codesnap", [
+        const { fullLinesSelection } = getSettings("cy-easy-codesnap", [
             "fullLinesSelection",
         ]);
 

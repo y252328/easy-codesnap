@@ -55,7 +55,7 @@ export class SnapActions {
 
     "save-config"({ config }: { config: ExtensionConfig }) {
         const extensionSettings =
-            vscode.workspace.getConfiguration("easy-codesnap");
+            vscode.workspace.getConfiguration("cy-easy-codesnap");
 
         extensionSettingsNames.forEach((name) => {
             if (
@@ -74,7 +74,7 @@ export class SnapActions {
     }
 
     "open-settings"() {
-        vscode.commands.executeCommand("easy-codesnap.openSettings");
+        vscode.commands.executeCommand("cy-easy-codesnap.openSettings");
     }
 
     "copy-svg"({ data }: { data: string }) {

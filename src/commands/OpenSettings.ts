@@ -2,12 +2,12 @@ import * as vscode from "vscode";
 import { Command } from "./Command";
 
 export class OpenSettingsCommand extends Command {
-    name = "easy-codesnap.openSettings";
+    name = "cy-easy-codesnap.openSettings";
 
     exec() {
         vscode.commands.executeCommand(
             "workbench.action.openSettings",
-            "@ext:ArthurLobo.easy-codesnap",
+            "@ext:CyH.cy-easy-codesnap",
         );
     }
 }

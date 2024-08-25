@@ -11,7 +11,7 @@ export function getConfig() {
     }
 
     const extensionSettings = getSettings(
-        "easy-codesnap",
+        "cy-easy-codesnap",
         extensionSettingsNames,
     );
 

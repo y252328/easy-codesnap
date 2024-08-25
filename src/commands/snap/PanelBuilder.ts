@@ -43,8 +43,8 @@ export class PanelBuilder {
 
     private createPanel() {
         this.panel = vscode.window.createWebviewPanel(
-            "easy-codesnap",
-            "Easy CodeSnap 📸",
+            "cy-easy-codesnap",
+            "CY Easy CodeSnap 📸",
             { viewColumn: vscode.ViewColumn.Beside, preserveFocus: true },
             {
                 enableScripts: true,

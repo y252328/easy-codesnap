@@ -3,12 +3,12 @@ import { CodeSnapConfigNames } from "../constants";
 import { Command } from "./Command";
 
 export class ImportSettingsCommand extends Command {
-    name = "easy-codesnap.importSettings";
+    name = "cy-easy-codesnap.importSettings";
 
     exec() {
-        const codesnapSettings = vscode.workspace.getConfiguration("codesnap");
+        const codesnapSettings = vscode.workspace.getConfiguration("cy-easy-codesnap");
         const extensionSettings =
-            vscode.workspace.getConfiguration("easy-codesnap");
+            vscode.workspace.getConfiguration("cy-easy-codesnap");
 
         CodeSnapConfigNames.forEach((name) => {
             extensionSettings.update(

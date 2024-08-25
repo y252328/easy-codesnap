@@ -1,6 +1,6 @@
 # Easy CodeSnap
 
-![Banner](https://raw.githubusercontent.com/ArthurLobopro/easy-codesnap/main/screenshots/banner.png)
+![Banner](https://raw.githubusercontent.com/y252328/easy-codesnap/main/screenshots/banner.png)
 
 ## Features
 
@@ -19,13 +19,13 @@
 - Select the code from your editor
 - Click on the camera icon on vscode statusbar
 
-![icon screenshot](https://raw.githubusercontent.com/ArthurLobopro/easy-codesnap/master/screenshots/screenshot-icon.png)
+![icon screenshot](https://raw.githubusercontent.com/y252328/easy-codesnap/master/screenshots/screenshot-icon.png)
 
 - You can also use the **`Easy CodeSnap`** command in your command palette.
 
 - Make the final adjustments and take your code snapshot.
 
-![](https://raw.githubusercontent.com/ArthurLobopro/easy-codesnap/main/screenshots/one-time-config.gif)
+![](https://raw.githubusercontent.com/y252328/easy-codesnap/main/screenshots/one-time-config.gif)
 
 ## Commands
 

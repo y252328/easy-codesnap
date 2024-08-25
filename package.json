@@ -1,18 +1,18 @@
 {
-  "name": "easy-codesnap",
-  "displayName": "Easy CodeSnap",
+  "name": "cy-easy-codesnap",
+  "displayName": "CY Easy CodeSnap",
   "description": "Take beautiful screenshots of your code 📷",
-  "version": "1.15.1",
+  "version": "1.16.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArthurLobopro/easy-codesnap"
+    "url": "https://github.com/y252328/easy-codesnap"
   },
   "license": "MIT",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },
-  "publisher": "ArthurLobo",
+  "publisher": "CyH",
   "categories": [
     "Other"
   ],
@@ -23,98 +23,98 @@
   "contributes": {
     "commands": [
       {
-        "command": "easy-codesnap.snap",
-        "title": "Easy CodeSnap"
+        "command": "cy-easy-codesnap.snap",
+        "title": "CY Easy CodeSnap"
       },
       {
-        "command": "easy-codesnap.importSettings",
-        "title": "Easy CodeSnap: Import CodeSnap Settings"
+        "command": "cy-easy-codesnap.importSettings",
+        "title": "CY Easy CodeSnap: Import CodeSnap Settings"
       },
       {
-        "command": "easy-codesnap.openSettings",
-        "title": "Easy CodeSnap: Open Settings"
+        "command": "cy-easy-codesnap.openSettings",
+        "title": "CY Easy CodeSnap: Open Settings"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "easy-codesnap.snap",
+          "command": "cy-easy-codesnap.snap",
           "when": "editorHasSelection && !editorHasMultipleSelections"
         }
       ]
     },
     "configuration": {
       "type": "object",
-      "title": "Easy CodeSnap",
+      "title": "CY Easy CodeSnap",
       "properties": {
-        "easy-codesnap.backgroundColor": {
+        "cy-easy-codesnap.backgroundColor": {
           "scope": "resource",
           "type": "string",
           "default": "#abb8c3",
           "description": "The background color of the snippet's container"
         },
-        "easy-codesnap.boxShadow": {
+        "cy-easy-codesnap.boxShadow": {
           "scope": "resource",
           "type": "string",
           "default": "rgba(0, 0, 0, 0.55) 0px 20px 68px",
           "description": "The CSS box-shadow for the snippet"
         },
-        "easy-codesnap.containerPadding": {
+        "cy-easy-codesnap.containerPadding": {
           "scope": "resource",
           "type": "string",
           "default": "3em",
           "description": "The padding for the snippet's container"
         },
-        "easy-codesnap.roundedCorners": {
+        "cy-easy-codesnap.roundedCorners": {
           "scope": "resource",
           "type": "boolean",
           "default": true,
           "description": "Use rounded corners for the window"
         },
-        "easy-codesnap.showWindowControls": {
+        "cy-easy-codesnap.showWindowControls": {
           "scope": "resource",
           "type": "boolean",
           "default": true,
           "description": "Display OS X style window controls"
         },
-        "easy-codesnap.showWindowTitle": {
+        "cy-easy-codesnap.showWindowTitle": {
           "scope": "resource",
           "type": "boolean",
           "default": false,
           "description": "Display window title with open folder / file name"
         },
-        "easy-codesnap.windowTitleTemplate": {
+        "cy-easy-codesnap.windowTitleTemplate": {
           "scope": "resource",
           "type": "string",
           "default": "{workspace} - {fileName}",
           "minLength": 1,
           "description": "Defines the template to show snippet window title, you can use {workspace} and {fileName} variables"
         },
-        "easy-codesnap.showLineNumbers": {
+        "cy-easy-codesnap.showLineNumbers": {
           "scope": "resource",
           "type": "boolean",
           "default": true,
           "description": "Display line numbers"
         },
-        "easy-codesnap.realLineNumbers": {
+        "cy-easy-codesnap.realLineNumbers": {
           "scope": "resource",
           "type": "boolean",
           "default": false,
           "description": "Start from the selection's line number instead of 1"
         },
-        "easy-codesnap.highlightLineNumber": {
+        "cy-easy-codesnap.highlightLineNumber": {
           "scope": "resource",
           "type": "boolean",
           "default": false,
           "description": "When a line is highlighted, use activeForeground vscode theme color to highlight the line number."
         },
-        "easy-codesnap.transparentBackground": {
+        "cy-easy-codesnap.transparentBackground": {
           "scope": "resource",
           "type": "boolean",
           "default": false,
           "description": "Use a transparent background when taking the screenshot"
         },
-        "easy-codesnap.target": {
+        "cy-easy-codesnap.target": {
           "scope": "resource",
           "type": "string",
           "enum": [
@@ -124,7 +124,7 @@
           "default": "container",
           "description": "Take the shot with or without the container"
         },
-        "easy-codesnap.shutterAction": {
+        "cy-easy-codesnap.shutterAction": {
           "scope": "resource",
           "type": "string",
           "enum": [
@@ -134,13 +134,13 @@
           "default": "copy",
           "description": "The behavior of the shutter button"
         },
-        "easy-codesnap.enableResizing": {
+        "cy-easy-codesnap.enableResizing": {
           "scope": "resource",
           "type": "boolean",
           "default": true,
           "description": "Enable resizing the snap container"
         },
-        "easy-codesnap.roundingLevel": {
+        "cy-easy-codesnap.roundingLevel": {
           "scope": "resource",
           "type": "number",
           "default": 1,
@@ -152,19 +152,19 @@
             4
           ]
         },
-        "easy-codesnap.lockOnOpen": {
+        "cy-easy-codesnap.lockOnOpen": {
           "scope": "resource",
           "type": "boolean",
           "default": false,
           "description": "Auto Lock the snap screen on open"
         },
-        "easy-codesnap.linkOnOpen": {
+        "cy-easy-codesnap.linkOnOpen": {
           "scope": "resource",
           "type": "boolean",
           "default": false,
           "description": "Auto link the snap screen to editor on open"
         },
-        "easy-codesnap.saveFormat": {
+        "cy-easy-codesnap.saveFormat": {
           "scope": "resource",
           "type": "string",
           "default": "png",
@@ -174,7 +174,7 @@
             "svg"
           ]
         },
-        "easy-codesnap.saveScale": {
+        "cy-easy-codesnap.saveScale": {
           "scope": "resource",
           "type": "number",
           "default": 1,
@@ -185,7 +185,7 @@
             2
           ]
         },
-        "easy-codesnap.windowStyle": {
+        "cy-easy-codesnap.windowStyle": {
           "scope": "resource",
           "type": "string",
           "default": "macos",
@@ -195,7 +195,7 @@
             "windows"
           ]
         },
-        "easy-codesnap.aspect-ratio": {
+        "cy-easy-codesnap.aspect-ratio": {
           "scope": "resource",
           "type": "string",
           "default": "none",
@@ -208,7 +208,7 @@
             "16:9"
           ]
         },
-        "easy-codesnap.fullLinesSelection": {
+        "cy-easy-codesnap.fullLinesSelection": {
           "scope": "resource",
           "type": "boolean",
           "default": false,

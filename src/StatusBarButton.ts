@@ -12,7 +12,7 @@ export class StatusbarButton {
         button.text = "$(device-camera)";
         button.tooltip = "Snap code";
         button.color = "inherit";
-        button.command = "easy-codesnap.snap";
+        button.command = "cy-easy-codesnap.snap";
 
         if (vscode.window.activeTextEditor?.selection.isEmpty === false) {
             button.show();

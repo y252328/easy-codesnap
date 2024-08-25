@@ -34,7 +34,7 @@ export class PanelController {
                     actions[type]({ ...args } as any);
                 } else {
                     vscode.window.showErrorMessage(
-                        `Easy CodeSnap 📸: Unknown shutterAction "${type}"`,
+                        `CY Easy CodeSnap 📸: Unknown shutterAction "${type}"`,
                     );
                 }
             },
