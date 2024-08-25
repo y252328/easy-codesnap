@@ -53,9 +53,13 @@ export function getDefaultWindowTitle() {
         windowTitleIgnore,
     } = SessionConfig.get();
 
+    const now = new Date();
+    const dateTime = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+
     return windowTitleTemplate
         .replace(/\{fileName\}/g, fileName)
         .replace(/\{workspace\}/g, workspace)
         .replace(/\{filePath\}/g, filePath)
+        .replace(/\{dateTime\}/g, dateTime)
         .replaceAll(windowTitleIgnore, ""); 
 }
